@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import {CanvasProvider, styled } from '@workday/canvas-kit-react/common';
+import { Global, css } from '@emotion/react';
+import {fontFamily} from '@workday/canvas-kit-react/tokens';
+import { type } from '@workday/canvas-kit-labs-react/tokens';
+import { fonts } from "@workday/canvas-kit-react-fonts";
 
-function App() {
+// Applies font styles
+const FontContainer = styled("div")(...fonts, {
+  fontFamily,
+  ...type.body
+});
+
+const globalStyles = (`
+  html {
+    min-height: 100vh;
+  };
+  body {
+    margin: 0;
+    min-height: 100vh;
+  };
+ #root {
+    min-height: 100vh;
+  }
+`);
+
+export const App: React.FC = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CanvasProvider>
+      <FontContainer>
+        <Global styles={css(globalStyles)} />
+        {props.children}
+      </FontContainer>
+    </CanvasProvider>
   );
 }
-
-export default App;
