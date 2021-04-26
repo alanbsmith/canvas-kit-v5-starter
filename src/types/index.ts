@@ -1,3 +1,13 @@
+export type ImageType =
+  | "blackberry"
+  | "blueberry"
+  | "cantaloupe"
+  | "chiliMango"
+  | "cinnamon"
+  | "greenApple"
+  | "sourLemon"
+  | "watermelon";
+
 export type Coffee = {
   id: number;
   name: string;
@@ -9,4 +19,5 @@ export type Coffee = {
   bagWeight: "8" | "10" | "12";
   price: string;
   flavorProfile: string;
+  img: ImageType;
 };

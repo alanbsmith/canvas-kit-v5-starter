@@ -9,7 +9,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "16.55",
-    "flavorProfile": "honey & peach"
+    "flavorProfile": "honey & peach",
+    "img": "chiliMango"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.31",
-    "flavorProfile": "sweet & tart"
+    "flavorProfile": "sweet & tart",
+    "img": "blueberry"
   },
   {
     "id": 4,
@@ -33,7 +35,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "22.27",
-    "flavorProfile": "bold & heavy"
+    "flavorProfile": "bold & heavy",
+    "img": "blackberry"
   },
   {
     "id": 7,
@@ -45,7 +48,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.97",
-    "flavorProfile": "maple & orange zest"
+    "flavorProfile": "maple & orange zest",
+    "img": "sourLemon"
   },
   {
     "id": 10,
@@ -57,7 +61,8 @@
     "type": "Single Origin",
     "bagWeight": "8",
     "price": "15.60",
-    "flavorProfile": "honey & peach"
+    "flavorProfile": "honey & peach",
+    "img": "blackberry"
   },
   {
     "id": 11,
@@ -69,7 +74,8 @@
     "type": "Single Origin",
     "bagWeight": "8",
     "price": "12.88",
-    "flavorProfile": "caramel & toffee"
+    "flavorProfile": "caramel & toffee",
+    "img": "sourLemon"
   },
   {
     "id": 14,
@@ -81,7 +87,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.89",
-    "flavorProfile": "almond & vanilla"
+    "flavorProfile": "almond & vanilla",
+    "img": "sourLemon"
   },
   {
     "id": 15,
@@ -93,7 +100,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.66",
-    "flavorProfile": "bold & heavy"
+    "flavorProfile": "bold & heavy",
+    "img": "blueberry"
   },
   {
     "id": 26,
@@ -105,7 +113,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "16.77",
-    "flavorProfile": "chocolate & cherry"
+    "flavorProfile": "chocolate & cherry",
+    "img": "sourLemon"
   },
   {
     "id": 27,
@@ -117,7 +126,8 @@
     "type": "Blend",
     "bagWeight": "8",
     "price": "15.16",
-    "flavorProfile": "chocolate & cherry"
+    "flavorProfile": "chocolate & cherry",
+    "img": "greenApple"
   },
   {
     "id": 29,
@@ -129,7 +139,8 @@
     "type": "Single Origin",
     "bagWeight": "10",
     "price": "15.74",
-    "flavorProfile": "roasty & smoky"
+    "flavorProfile": "roasty & smoky",
+    "img": "sourLemon"
   },
   {
     "id": 30,
@@ -141,7 +152,8 @@
     "type": "Blend",
     "bagWeight": "12",
     "price": "16.12",
-    "flavorProfile": "almond & vanilla"
+    "flavorProfile": "almond & vanilla",
+    "img": "chiliMango"
   },
   {
     "id": 33,
@@ -153,7 +165,8 @@
     "type": "Single Origin",
     "bagWeight": "8",
     "price": "15.55",
-    "flavorProfile": "balanced & fruity"
+    "flavorProfile": "balanced & fruity",
+    "img": "cantaloupe"
   },
   {
     "id": 34,
@@ -165,7 +178,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.37",
-    "flavorProfile": "sweet & tart"
+    "flavorProfile": "sweet & tart",
+    "img": "greenApple"
   },
   {
     "id": 35,
@@ -177,7 +191,8 @@
     "type": "Blend",
     "bagWeight": "12",
     "price": "22.10",
-    "flavorProfile": "maple & orange zest"
+    "flavorProfile": "maple & orange zest",
+    "img": "chiliMango"
   },
   {
     "id": 37,
@@ -189,7 +204,8 @@
     "type": "Single Origin",
     "bagWeight": "8",
     "price": "15.81",
-    "flavorProfile": "honey & peach"
+    "flavorProfile": "honey & peach",
+    "img": "chiliMango"
   },
   {
     "id": 39,
@@ -201,7 +217,8 @@
     "type": "Single Origin",
     "bagWeight": "8",
     "price": "12.71",
-    "flavorProfile": "roasty & smoky"
+    "flavorProfile": "roasty & smoky",
+    "img": "cantaloupe"
   },
   {
     "id": 41,
@@ -213,7 +230,8 @@
     "type": "Single Origin",
     "bagWeight": "12",
     "price": "18.69",
-    "flavorProfile": "sweet & tart"
+    "flavorProfile": "sweet & tart",
+    "img": "blueberry"
   },
   {
     "id": 44,
@@ -225,7 +243,8 @@
     "type": "Blend",
     "bagWeight": "10",
     "price": "15.21",
-    "flavorProfile": "sweet & tart"
+    "flavorProfile": "sweet & tart",
+    "img": "watermelon"
   },
   {
     "id": 50,
@@ -237,6 +256,7 @@
     "type": "Single Origin",
     "bagWeight": "10",
     "price": "15.95",
-    "flavorProfile": "bold & heavy"
+    "flavorProfile": "bold & heavy",
+    "img": "cantaloupe"
   }
 ]
