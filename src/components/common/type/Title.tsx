@@ -23,7 +23,7 @@ export const Title = createComponent('h1')({
   displayName: 'Title',
   Component: ({ children, level = 'title', size = 'medium', ...props}: TitleProps, ref, Element) => {
     return (
-      <StyledTitle as={Element} ref={ref} {...props}>{children}</StyledTitle>
+      <StyledTitle as={Element} ref={ref} level={level} size={size} {...props}>{children}</StyledTitle>
     );
   }
 });

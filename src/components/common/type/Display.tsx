@@ -23,7 +23,7 @@ export const Display = createComponent('h2')({
   displayName: 'Display',
   Component: ({ children, level = 'display', size = 'medium', ...props}: DisplayProps, ref, Element) => {
     return (
-      <StyledDisplay as={Element} ref={ref} {...props}>{children}</StyledDisplay>
+      <StyledDisplay as={Element} ref={ref} level={level} size={size} {...props}>{children}</StyledDisplay>
     );
   }
 });

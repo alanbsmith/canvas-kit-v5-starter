@@ -23,7 +23,7 @@ export const Body = createComponent('span')({
   displayName: 'Body',
   Component: ({ children, level = 'body', size = 'medium', ...props}: BodyProps, ref, Element) => {
     return (
-      <StyledBody as={Element} ref={ref} {...props}>{children}</StyledBody>
+      <StyledBody as={Element} ref={ref} level={level} size={size} {...props}>{children}</StyledBody>
     );
   }
 });

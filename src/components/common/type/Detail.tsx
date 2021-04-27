@@ -22,7 +22,7 @@ export const Detail = createComponent('span')({
   displayName: 'Detail',
   Component: ({ children, level = 'detail', size = 'medium', ...props}: DetailProps, ref, Element) => {
     return (
-      <StyledDetail as={Element} ref={ref} {...props}>{children}</StyledDetail>
+      <StyledDetail as={Element} ref={ref} level={level} size={size} {...props}>{children}</StyledDetail>
     );
   }
 });

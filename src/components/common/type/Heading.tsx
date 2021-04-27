@@ -23,7 +23,7 @@ export const Heading = createComponent('h2')({
   displayName: 'Heading',
   Component: ({ children, level = 'heading', size = 'medium', ...props}: HeadingProps, ref, Element) => {
     return (
-      <StyledHeading as={Element} ref={ref} {...props}>{children}</StyledHeading>
+      <StyledHeading as={Element} level={level} ref={ref} size={size} {...props}>{children}</StyledHeading>
     );
   }
 });
