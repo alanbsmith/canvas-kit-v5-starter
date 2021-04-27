@@ -39,7 +39,12 @@ export const App: React.FC = (props) => {
             Canvas Coffee Roasters
           </PageHeader.Heading>
         </PageHeader>
-        {props.children}
+        <Flex minHeight="100vh">
+          <Sidebar>
+            Hello, Sidebar!
+          </Sidebar>
+          {props.children}
+        </Flex>
       </FontContainer>
     </CanvasProvider>
   );
