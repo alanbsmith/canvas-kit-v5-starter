@@ -8,7 +8,8 @@ import { fonts } from "@workday/canvas-kit-react-fonts";
 // Applies font styles
 const FontContainer = styled("div")(...fonts, {
   fontFamily,
-  ...type.body
+  ...type.body,
+  minHeight: '100vh',
 });
 
 const globalStyles = (`
