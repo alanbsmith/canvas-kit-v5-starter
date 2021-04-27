@@ -15,7 +15,7 @@ export const Card = ({ children, ...props }: FlexProps) => {
     <Flex
       margin="s"
       flexDirection="column"
-      flexBasis="240px"
+      flexBasis="330px"
       alignSelf="stretch"
       flexGrow={0}
       padding="l"
