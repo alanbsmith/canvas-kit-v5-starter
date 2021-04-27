@@ -2381,26 +2381,26 @@
   resolved "https://registry.yarnpkg.com/@workday/canvas-depth-web/-/canvas-depth-web-0.16.4.tgz#3714a1a955055386a2b70cc05852162b1e056bf2"
   integrity sha512-l4LpCUk2G1FVRfo0Z+MkCWa9bzNIfWdUqGtdXaFSBySYgYvLhG6vNNuTK1VXls8jQdFCUROhKRWcy3Ht1n7NDg==
 
-"@workday/canvas-kit-labs-react@5.0.0-beta.2-next.1":
-  version "5.0.0-beta.2-next.1"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-labs-react/-/canvas-kit-labs-react-5.0.0-beta.2-next.1.tgz#29e878864e7e25b0461dd2b3d734223885949730"
-  integrity sha512-XcKfCMUztOihlLS+NjlRBGI1ytKMio5pZ6s8ZsErnwqXHkHbm2oD2F4OqG84r7YEmPSO7YV25wOgGx0ueQMzlw==
+"@workday/canvas-kit-labs-react@5.0.0-beta.2":
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-labs-react/-/canvas-kit-labs-react-5.0.0-beta.2.tgz#5dee283eafefe02f09b9156a044e1e5499682ee3"
+  integrity sha512-CSi/s+VMX5IUi4wBRv7Zwzef93uav/heheUiN8cOQLFasLNT2s9/mJhFVEkelyt4PyeoJeXDOeN/UgNTCrTDzA==
   dependencies:
     "@emotion/core" "^10.0.28"
     "@emotion/styled" "^10.0.27"
     "@types/uuid" "^3.4.4"
     "@workday/canvas-colors-web" "^2.0.0"
-    "@workday/canvas-kit-react" "^5.0.0-beta.2-next.1+51c24368"
+    "@workday/canvas-kit-react" "^5.0.0-beta.2"
     "@workday/canvas-system-icons-web" "1.0.41"
     "@workday/design-assets-types" "^0.2.4"
     chroma-js "^2.1.0"
     lodash.flatten "^4.4.0"
     uuid "^3.3.3"
 
-"@workday/canvas-kit-popup-stack@^5.0.0-beta.2-next.1+51c24368":
-  version "5.0.0-beta.2-next.1"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-popup-stack/-/canvas-kit-popup-stack-5.0.0-beta.2-next.1.tgz#5cd7655579f284282d98a744e92588f00f09715b"
-  integrity sha512-ZxVoi/OycPJANE/i6vp9jXw/kJjMU+AjPeQ/TWbZdpzq2QIClumJoUIJmh+sf7SzdCJJS/nFnWuYI8swZOxQBQ==
+"@workday/canvas-kit-popup-stack@^5.0.0-beta.2", "@workday/canvas-kit-popup-stack@^5.0.0-beta.2-next.2+3b3e8db7":
+  version "5.0.0-beta.2-next.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-popup-stack/-/canvas-kit-popup-stack-5.0.0-beta.2-next.2.tgz#c12d9d65470d202dc175e09f23471b38e51e1eb1"
+  integrity sha512-DdeqQi/Hpmzhp41yF3jpzZqFpbvekaKzTjRwJ2RaNXZXbt+iToIfCCHd6XryJbbiwxdc13XjBUDA7bN2rX80rA==
 
 "@workday/canvas-kit-react-fonts@^4.6.0":
   version "4.6.0"
@@ -2409,10 +2409,10 @@
   dependencies:
     "@emotion/core" "^10.0.28"
 
-"@workday/canvas-kit-react@5.0.0-beta.2-next.1", "@workday/canvas-kit-react@^5.0.0-beta.2-next.1+51c24368":
-  version "5.0.0-beta.2-next.1"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.0-beta.2-next.1.tgz#4594343cbcd369180a5f85d2a75f8152004a1e1f"
-  integrity sha512-ny3BpV7tdOuptF7fctxaNSThSz5ZXOU27+sqDk6LJyN9aRoCHzgzELQzkmZURk4n3WPPmx3cc/D7zkhJU+tdFg==
+"@workday/canvas-kit-react@5.0.0-beta.2":
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.0-beta.2.tgz#bf023cb2f6f32a71090d72dc4a28320488d00f73"
+  integrity sha512-wzj6dEKz80b4GRW0FJ3l4Ccf/3gHnZ6ldGOqF1t/Jkc9TIK57vunBtzD5qmeyRittTDTdNc74g+7CvJGLl6r3w==
   dependencies:
     "@emotion/core" "^10.0.28"
     "@emotion/is-prop-valid" "^0.8.2"
@@ -2420,7 +2420,31 @@
     "@popperjs/core" "^2.5.4"
     "@workday/canvas-colors-web" "^2.0.0"
     "@workday/canvas-depth-web" "^0.16.4"
-    "@workday/canvas-kit-popup-stack" "^5.0.0-beta.2-next.1+51c24368"
+    "@workday/canvas-kit-popup-stack" "^5.0.0-beta.2"
+    "@workday/canvas-system-icons-web" "1.0.41"
+    "@workday/design-assets-types" "^0.2.4"
+    chroma-js "^2.1.0"
+    element-closest "^3.0.2"
+    emotion-theming "^10.0.10"
+    focus-trap-js "1.1.0"
+    lodash "^4.17.14"
+    polished "^2.3.0"
+    react-innertext "^1.1.5"
+    rtl-css-js "^1.13.1"
+    uuid "^3.3.3"
+
+"@workday/canvas-kit-react@^5.0.0-beta.2":
+  version "5.0.0-beta.2-next.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.0-beta.2-next.2.tgz#e96ccb876a5c8bb1413909e08c5d008e2b103aa3"
+  integrity sha512-o+gg0uJDGu8LsIuaihlgdgVchhrRGr53pW88CJ0UfGoAD9IvN6T2lKoV0EyooqBtDyCZkDkIpTIGCZIIvlNvlQ==
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@popperjs/core" "^2.5.4"
+    "@workday/canvas-colors-web" "^2.0.0"
+    "@workday/canvas-depth-web" "^0.16.4"
+    "@workday/canvas-kit-popup-stack" "^5.0.0-beta.2-next.2+3b3e8db7"
     "@workday/canvas-system-icons-web" "1.0.41"
     "@workday/design-assets-types" "^0.2.4"
     chroma-js "^2.1.0"
