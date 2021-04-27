@@ -41,7 +41,6 @@ export const App: React.FC = (props) => {
         </PageHeader>
         <Flex minHeight="100vh">
           <Sidebar>
-            Hello, Sidebar!
           </Sidebar>
           {props.children}
         </Flex>

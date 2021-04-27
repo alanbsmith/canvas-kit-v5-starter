@@ -6,8 +6,7 @@ import {createComponent, StyledType} from '@workday/canvas-kit-react/common';
 import {Box, BoxProps} from '../primitives/Box';
 import {Flex, FlexProps} from './Flex';
 import {getValidChildren} from './utils/getValidChildren';
-import {stack, StackProps as StackBaseProps} from './utils/stack';
-
+import {stack, StackProps as StackBaseProps } from './utils/stack';
 export type StackProps = StyledType & FlexProps & StackBaseProps;
 
 export const StackItem = createComponent('div')({

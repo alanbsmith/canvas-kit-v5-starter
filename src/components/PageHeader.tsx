@@ -14,6 +14,6 @@ export const PageHeader = ({children, ...props}: BoxProps) => {
 
 PageHeader.Heading = (props: HeadingProps) => {
   return (
-    <Heading fontWeight="regular" {...props}>{props.children}</Heading>
+    <Heading fontWeight="regular" variant="inverse" {...props}>{props.children}</Heading>
   )
 }
