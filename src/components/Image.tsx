@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import {createComponent, StyledType} from '@workday/canvas-kit-react/common';
 
+import { Box, BoxProps } from './common/primitives';
 import { ImageType } from '../types'; 
 
 import blackberry from '../assets/coffee-bag-blackberry.svg'
@@ -24,21 +25,17 @@ const imageTypes = {
   watermelon,
 };
 
-export type ImageProps = StyledType & {
+export type ImageProps = StyledType & BoxProps & {
   alt: string;
   type: ImageType;
 };
 
-const StyledImage = styled('img')<StyledType>({
-
-});
-
-export const Image = createComponent('img')({
+export const Image = createComponent('img')<ImageProps>({
   displayName: 'Image',
   Component: ({ type, ...props }: ImageProps, ref, Element) => {
     const imgSrc = imageTypes[type];
     return (
-      <StyledImage as={Element} src={imgSrc} ref={ref} {...props} />
+      <Box as={Element} ref={ref} src={imgSrc} {...props} />
     );
   }
 });
