@@ -93,7 +93,7 @@ const marginRight = (value: SpacePropValue, isRTL = false) => {
 
 const marginBottom = (value: SpacePropValue) => {
   return {
-    marginB: spaceTokens[value as CanvasSpaceKeys] || value,
+    marginBottom: spaceTokens[value as CanvasSpaceKeys] || value,
   };
 };
 
