@@ -83,6 +83,6 @@ export function type<P extends TypeProps>(props: P) {
       }
     }
   }
-  console.log(props, styles);
+
   return styles;
 }
