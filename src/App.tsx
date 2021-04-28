@@ -5,7 +5,7 @@ import { fontFamily } from '@workday/canvas-kit-react/tokens';
 import { type } from '@workday/canvas-kit-labs-react/tokens';
 import { fonts } from '@workday/canvas-kit-react-fonts';
 
-import { Flex } from './components/common/layout/Flex';
+import { HStack, VStack } from './components/common/layout/Stack';
 import { PageHeader } from './components/PageHeader';
 import { Sidebar } from './components/Sidebar';
 
@@ -37,10 +37,10 @@ export const App: React.FC = (props) => {
         <PageHeader>
           <PageHeader.Heading>Canvas Coffee Roasters</PageHeader.Heading>
         </PageHeader>
-        <Flex minHeight="100vh">
+        <HStack spacing={32}>
           <Sidebar></Sidebar>
-          {props.children}
-        </Flex>
+          <VStack spacing={0}>{props.children}</VStack>
+        </HStack>
       </FontContainer>
     </CanvasProvider>
   );
