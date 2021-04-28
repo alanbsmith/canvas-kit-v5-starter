@@ -10,13 +10,16 @@ export type AllCoffeeContextType = {
 export const AllCoffeeContext = React.createContext({} as AllCoffeeContextType);
 
 export const AllCoffeeProvider: React.FC = (props) => {
-
   const value = {
     coffee: data,
   } as AllCoffeeContextType;
 
-  return <AllCoffeeContext.Provider value={value}>{props.children}</AllCoffeeContext.Provider>
-}
+  return (
+    <AllCoffeeContext.Provider value={value}>
+      {props.children}
+    </AllCoffeeContext.Provider>
+  );
+};
 
 export const useAllCoffee = () => {
   const context = React.useContext(AllCoffeeContext);
@@ -25,4 +28,4 @@ export const useAllCoffee = () => {
   }
 
   return context;
-}
+};

@@ -1,4 +1,4 @@
-import {depth as depthTokens} from '@workday/canvas-kit-react/tokens';
+import { depth as depthTokens } from '@workday/canvas-kit-react/tokens';
 
 export type DepthTokens = typeof depthTokens;
 export type DepthTokenKeys = keyof DepthTokens;

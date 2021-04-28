@@ -1,6 +1,6 @@
-import { typeColors } from "@workday/canvas-colors-web";
-import { CSSProperties, fontFamily } from "@workday/canvas-kit-react/tokens";
-import { type as beta_Type } from "@workday/canvas-kit-labs-react/tokens";
+import { typeColors } from '@workday/canvas-colors-web';
+import { CSSProperties, fontFamily } from '@workday/canvas-kit-react/tokens';
+import { type as beta_Type } from '@workday/canvas-kit-labs-react/tokens';
 
 type HierarchyLevelSizes = {
   small: CSSProperties;

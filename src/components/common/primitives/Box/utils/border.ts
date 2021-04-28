@@ -1,14 +1,14 @@
-import { Property } from "csstype";
+import { Property } from 'csstype';
 import {
   colors as colorTokens,
   CanvasColor,
-} from "@workday/canvas-kit-react/tokens";
+} from '@workday/canvas-kit-react/tokens';
 
 // temporary import until border tokens are updated in CK
 import {
   borderRadius as borderRadiusTokens,
   CanvasBorderRadiusTokens,
-} from "./tokens";
+} from './tokens';
 
 /** style props to set the border properties */
 export type BorderShorthandProps = {
@@ -88,43 +88,43 @@ export type BorderProps = BorderShorthandProps &
   BorderWidthProps;
 
 const borderShorthandStyles = {
-  border: "border",
-  borderTop: "borderTop",
-  borderRight: "borderRight",
-  borderBottom: "borderBottom",
-  borderLeft: "borderLeft",
+  border: 'border',
+  borderTop: 'borderTop',
+  borderRight: 'borderRight',
+  borderBottom: 'borderBottom',
+  borderLeft: 'borderLeft',
 };
 
 const borderColors = {
-  borderColor: "borderColor",
-  borderTopColor: "borderTopColor",
-  borderRightColor: "borderRightColor",
-  borderBottomColor: "borderBottomColor",
-  borderLeftColor: "borderLeftColor",
+  borderColor: 'borderColor',
+  borderTopColor: 'borderTopColor',
+  borderRightColor: 'borderRightColor',
+  borderBottomColor: 'borderBottomColor',
+  borderLeftColor: 'borderLeftColor',
 };
 
 const borderRadii = {
-  borderRadius: "borderRadius",
-  borderTopLeftRadius: "borderTopLeftRadius",
-  borderTopRightRadius: "borderTopRightRadius",
-  borderBottomLeftRadius: "borderBottomLeftRadius",
-  borderBottomRightRadius: "borderBottomRightRadius",
+  borderRadius: 'borderRadius',
+  borderTopLeftRadius: 'borderTopLeftRadius',
+  borderTopRightRadius: 'borderTopRightRadius',
+  borderBottomLeftRadius: 'borderBottomLeftRadius',
+  borderBottomRightRadius: 'borderBottomRightRadius',
 };
 
 const borderStyles = {
-  borderStyle: "borderStyle",
-  borderTopStyle: "borderTopStyle",
-  borderRightStyle: "borderRightStyle",
-  borderBottomStyle: "borderBottomStyle",
-  borderLeftStyle: "borderLeftStyle",
+  borderStyle: 'borderStyle',
+  borderTopStyle: 'borderTopStyle',
+  borderRightStyle: 'borderRightStyle',
+  borderBottomStyle: 'borderBottomStyle',
+  borderLeftStyle: 'borderLeftStyle',
 };
 
 const borderWidths = {
-  borderWidth: "borderWidth",
-  borderTopWidth: "borderTopWidth",
-  borderRightWidth: "borderRightWidth",
-  borderBottomWidth: "borderBottomWidth",
-  borderLeftWidth: "borderLeftWidth",
+  borderWidth: 'borderWidth',
+  borderTopWidth: 'borderTopWidth',
+  borderRightWidth: 'borderRightWidth',
+  borderBottomWidth: 'borderBottomWidth',
+  borderLeftWidth: 'borderLeftWidth',
 };
 
 /**

@@ -1,17 +1,17 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
-import {createComponent, StyledType} from '@workday/canvas-kit-react/common';
+import { createComponent, StyledType } from '@workday/canvas-kit-react/common';
 // import {Box, BoxProps} from '@workday/canvas-kit-labs-react/common';
 // import locally until Box is in v5
-import {Box, BoxProps} from '../primitives/Box';
-import {Flex, FlexProps} from './Flex';
-import {getValidChildren} from './utils/getValidChildren';
-import {stack, StackProps as StackBaseProps } from './utils/stack';
+import { Box, BoxProps } from '../primitives/Box';
+import { Flex, FlexProps } from './Flex';
+import { getValidChildren } from './utils/getValidChildren';
+import { stack, StackProps as StackBaseProps } from './utils/stack';
 export type StackProps = StyledType & FlexProps & StackBaseProps;
 
 export const StackItem = createComponent('div')({
   displayName: 'Stack.Item',
-  Component: ({children, ...elemProps}: BoxProps, ref, Element) => {
+  Component: ({ children, ...elemProps }: BoxProps, ref, Element) => {
     return (
       <Box
         as={Element}
@@ -32,15 +32,25 @@ const StyledStack = styled(Flex)<StackProps>(stack);
 export const Stack = createComponent('div')<StackProps>({
   displayName: 'Stack',
   Component: (
-    {children, flexDirection = 'row', shouldWrapChildren = false, ...elemProps}: StackProps,
+    {
+      children,
+      flexDirection = 'row',
+      shouldWrapChildren = false,
+      ...elemProps
+    }: StackProps,
     ref,
     Element
   ) => {
     const validChildren = getValidChildren(children);
     return (
-      <StyledStack as={Element} ref={ref} flexDirection={flexDirection} {...elemProps}>
+      <StyledStack
+        as={Element}
+        ref={ref}
+        flexDirection={flexDirection}
+        {...elemProps}
+      >
         {shouldWrapChildren
-          ? validChildren.map(child => <StackItem>{child}</StackItem>)
+          ? validChildren.map((child) => <StackItem>{child}</StackItem>)
           : validChildren}
       </StyledStack>
     );
@@ -56,7 +66,11 @@ export type HStackProps = Omit<StackProps, 'flexDirection'> & {
 
 export const HStack = createComponent('div')<HStackProps>({
   displayName: 'HStack',
-  Component: ({children, flexDirection = 'row', ...elemProps}: HStackProps, ref, Element) => {
+  Component: (
+    { children, flexDirection = 'row', ...elemProps }: HStackProps,
+    ref,
+    Element
+  ) => {
     return (
       <Stack
         as={Element}
@@ -75,9 +89,18 @@ export type VStackProps = Omit<StackProps, 'flexDirection'> & {
 
 export const VStack = createComponent('div')<VStackProps>({
   displayName: 'VStack',
-  Component: ({children, flexDirection = 'column', ...elemProps}: VStackProps, ref, Element) => {
+  Component: (
+    { children, flexDirection = 'column', ...elemProps }: VStackProps,
+    ref,
+    Element
+  ) => {
     return (
-      <Stack as={Element} ref={ref} flexDirection={flexDirection} {...elemProps}>
+      <Stack
+        as={Element}
+        ref={ref}
+        flexDirection={flexDirection}
+        {...elemProps}
+      >
         {children}
       </Stack>
     );

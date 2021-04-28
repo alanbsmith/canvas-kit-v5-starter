@@ -1,4 +1,4 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 /** style props to for flexbox container properties */
 export type FlexProps = {

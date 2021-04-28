@@ -2,11 +2,11 @@ import {
   ContentDirection,
   PartialEmotionCanvasTheme,
   useTheme,
-} from "@workday/canvas-kit-react/common";
+} from '@workday/canvas-kit-react/common';
 import {
   space as spaceTokens,
   CanvasSpace,
-} from "@workday/canvas-kit-react/tokens";
+} from '@workday/canvas-kit-react/tokens';
 
 // temporarily add CanvasSpaceKeys until exported from tokens
 type CanvasSpaceKeys = keyof CanvasSpace;
@@ -85,7 +85,7 @@ const marginTop = (value: SpacePropValue) => {
 };
 
 const marginRight = (value: SpacePropValue, isRTL = false) => {
-  const attr = isRTL ? "marginLeft" : "marginRight";
+  const attr = isRTL ? 'marginLeft' : 'marginRight';
   return {
     [attr]: spaceTokens[value as CanvasSpaceKeys] || value,
   };
@@ -98,7 +98,7 @@ const marginBottom = (value: SpacePropValue) => {
 };
 
 const marginLeft = (value: SpacePropValue, isRTL = false) => {
-  const attr = isRTL ? "marginRight" : "marginLeft";
+  const attr = isRTL ? 'marginRight' : 'marginLeft';
   return {
     [attr]: spaceTokens[value as CanvasSpaceKeys] || value,
   };
@@ -131,7 +131,7 @@ const paddingTop = (value: SpacePropValue) => {
 };
 
 const paddingRight = (value: SpacePropValue, isRTL = false) => {
-  const attr = isRTL ? "paddingLeft" : "paddingRight";
+  const attr = isRTL ? 'paddingLeft' : 'paddingRight';
   return {
     [attr]: spaceTokens[value as CanvasSpaceKeys] || value,
   };
@@ -144,7 +144,7 @@ const paddingBottom = (value: SpacePropValue) => {
 };
 
 const paddingLeft = (value: SpacePropValue, isRTL = false) => {
-  const attr = isRTL ? "paddingRight" : "paddingLeft";
+  const attr = isRTL ? 'paddingRight' : 'paddingLeft';
   return {
     [attr]: spaceTokens[value as CanvasSpaceKeys] || value,
   };

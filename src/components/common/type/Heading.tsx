@@ -1,16 +1,20 @@
-import * as React from "react";
-import styled from "@emotion/styled";
-import {createComponent, StyledType} from '@workday/canvas-kit-react/common';
+import * as React from 'react';
+import styled from '@emotion/styled';
+import { createComponent, StyledType } from '@workday/canvas-kit-react/common';
 
 import { type, TypeProps } from './utils/type';
 
-export type HeadingProps = StyledType & TypeProps & {
-  children?: React.ReactNode;
-};
+export type HeadingProps = StyledType &
+  TypeProps & {
+    children?: React.ReactNode;
+  };
 
-const StyledHeading = styled('h2')<HeadingProps>({
-  margin: 0,
-}, type);
+const StyledHeading = styled('h2')<HeadingProps>(
+  {
+    margin: 0,
+  },
+  type
+);
 
 /**
  * Intended to be used for headings and large text.
@@ -21,9 +25,21 @@ const StyledHeading = styled('h2')<HeadingProps>({
  */
 export const Heading = createComponent('h2')({
   displayName: 'Heading',
-  Component: ({ children, level = 'heading', size = 'medium', ...props}: HeadingProps, ref, Element) => {
+  Component: (
+    { children, level = 'heading', size = 'medium', ...props }: HeadingProps,
+    ref,
+    Element
+  ) => {
     return (
-      <StyledHeading as={Element} level={level} ref={ref} size={size} {...props}>{children}</StyledHeading>
+      <StyledHeading
+        as={Element}
+        level={level}
+        ref={ref}
+        size={size}
+        {...props}
+      >
+        {children}
+      </StyledHeading>
     );
-  }
+  },
 });

@@ -7,16 +7,21 @@ export type NewAndInterestingContextType = {
   coffee: Coffee[];
 };
 
-export const NewAndInterestingContext = React.createContext({} as NewAndInterestingContextType);
+export const NewAndInterestingContext = React.createContext(
+  {} as NewAndInterestingContextType
+);
 
 export const NewAndInterestingProvider: React.FC = (props) => {
-
   const value = {
     coffee: data,
   } as NewAndInterestingContextType;
 
-  return <NewAndInterestingContext.Provider value={value}>{props.children}</NewAndInterestingContext.Provider>
-}
+  return (
+    <NewAndInterestingContext.Provider value={value}>
+      {props.children}
+    </NewAndInterestingContext.Provider>
+  );
+};
 
 export const useNewAndInteresting = () => {
   const context = React.useContext(NewAndInterestingContext);
@@ -25,4 +30,4 @@ export const useNewAndInteresting = () => {
   }
 
   return context;
-}
+};

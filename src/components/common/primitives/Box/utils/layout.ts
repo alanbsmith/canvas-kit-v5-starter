@@ -1,4 +1,4 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 /** style props to for layout properties */
 export type LayoutProps = {

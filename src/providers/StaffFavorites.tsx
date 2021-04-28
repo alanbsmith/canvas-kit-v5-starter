@@ -7,16 +7,21 @@ export type StaffFavoritesContextType = {
   coffee: Coffee[];
 };
 
-export const StaffFavoritesContext = React.createContext({} as StaffFavoritesContextType);
+export const StaffFavoritesContext = React.createContext(
+  {} as StaffFavoritesContextType
+);
 
 export const StaffFavoritesProvider: React.FC = (props) => {
-
   const value = {
     coffee: data,
   } as StaffFavoritesContextType;
 
-  return <StaffFavoritesContext.Provider value={value}>{props.children}</StaffFavoritesContext.Provider>
-}
+  return (
+    <StaffFavoritesContext.Provider value={value}>
+      {props.children}
+    </StaffFavoritesContext.Provider>
+  );
+};
 
 export const useStaffFavorites = () => {
   const context = React.useContext(StaffFavoritesContext);
@@ -25,4 +30,4 @@ export const useStaffFavorites = () => {
   }
 
   return context;
-}
+};

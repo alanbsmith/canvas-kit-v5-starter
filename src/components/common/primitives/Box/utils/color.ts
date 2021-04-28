@@ -1,7 +1,7 @@
 import {
   colors as colorTokens,
   CanvasColor,
-} from "@workday/canvas-kit-react/tokens";
+} from '@workday/canvas-kit-react/tokens';
 
 export type ColorTokens = typeof colorTokens;
 

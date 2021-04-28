@@ -10,4 +10,4 @@ export const HomeContainer: React.FC = () => {
       <Home />
     </AllCoffeeProvider>
   );
-}
+};

@@ -10,13 +10,16 @@ export type PopularContextType = {
 export const PopularContext = React.createContext({} as PopularContextType);
 
 export const PopularProvider: React.FC = (props) => {
-
   const value = {
     coffee: data,
   } as PopularContextType;
 
-  return <PopularContext.Provider value={value}>{props.children}</PopularContext.Provider>
-}
+  return (
+    <PopularContext.Provider value={value}>
+      {props.children}
+    </PopularContext.Provider>
+  );
+};
 
 export const usePopular = () => {
   const context = React.useContext(PopularContext);
@@ -25,4 +28,4 @@ export const usePopular = () => {
   }
 
   return context;
-}
+};

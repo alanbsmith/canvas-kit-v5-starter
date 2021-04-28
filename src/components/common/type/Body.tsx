@@ -1,16 +1,20 @@
-import * as React from "react";
-import styled from "@emotion/styled";
-import {createComponent, StyledType} from '@workday/canvas-kit-react/common';
+import * as React from 'react';
+import styled from '@emotion/styled';
+import { createComponent, StyledType } from '@workday/canvas-kit-react/common';
 
 import { type, TypeProps } from './utils/type';
 
-export type BodyProps = StyledType & TypeProps & {
-  children?: React.ReactNode;
-};
+export type BodyProps = StyledType &
+  TypeProps & {
+    children?: React.ReactNode;
+  };
 
-const StyledBody = styled('span')<BodyProps>({
-  margin: 0,
-}, type);
+const StyledBody = styled('span')<BodyProps>(
+  {
+    margin: 0,
+  },
+  type
+);
 
 /**
  * Intended to be used for standard body text.
@@ -21,9 +25,15 @@ const StyledBody = styled('span')<BodyProps>({
  */
 export const Body = createComponent('span')({
   displayName: 'Body',
-  Component: ({ children, level = 'body', size = 'medium', ...props}: BodyProps, ref, Element) => {
+  Component: (
+    { children, level = 'body', size = 'medium', ...props }: BodyProps,
+    ref,
+    Element
+  ) => {
     return (
-      <StyledBody as={Element} ref={ref} level={level} size={size} {...props}>{children}</StyledBody>
+      <StyledBody as={Element} ref={ref} level={level} size={size} {...props}>
+        {children}
+      </StyledBody>
     );
-  }
+  },
 });

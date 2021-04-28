@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Box } from "./common/primitives/Box";
+import { Box } from './common/primitives/Box';
 
 export const Sidebar: React.FC = ({ children }) => {
   return (
@@ -14,4 +14,4 @@ export const Sidebar: React.FC = ({ children }) => {
       {children}
     </Box>
   );
-}
+};
