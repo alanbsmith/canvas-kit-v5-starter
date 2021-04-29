@@ -36,10 +36,10 @@ const CoffeeList: React.FC<CoffeeProps> = ({ coffee }) => {
 
 export const Home: React.FC = () => {
   const { coffee } = useAllCoffee();
-  const range = coffee.length / 3;
-  const popularCoffee = coffee.slice(0, range);
-  const newCoffee = coffee.slice(range, range * 2);
-  const staffCoffee = coffee.slice(range * 2);
+  const range = coffee.length / 6;
+  const newCoffee = coffee.slice(0, range);
+  const popularCoffee = coffee.slice(range, range * 2);
+  const staffCoffee = coffee.slice(range * 2, range * 3);
 
   return (
     <Tabs>
@@ -49,6 +49,7 @@ export const Home: React.FC = () => {
         <Tabs.Item>New & Interesting</Tabs.Item>
         <Tabs.Item>Staff Favorites</Tabs.Item>
       </Tabs.List>
+
       <Tabs.Panel>
         <CoffeeList coffee={coffee} />
       </Tabs.Panel>
