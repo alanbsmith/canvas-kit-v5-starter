@@ -5,6 +5,8 @@ import { Tabs } from '../../components/backstage/Tabs';
 import { Flex } from '../../components/common/layout';
 import { Card } from '../../components/Card';
 import { Coffee } from '../../types';
+import { splitCoffee } from '../../data/utils';
+
 
 type CoffeeProps = {
   coffee: Coffee[];
@@ -35,10 +37,7 @@ const CoffeeList: React.FC<CoffeeProps> = ({ coffee }) => {
 
 export const Home: React.FC = () => {
   const { coffee } = useAllCoffee();
-  const range = coffee.length / 6;
-  const newCoffee = coffee.slice(0, range);
-  const popularCoffee = coffee.slice(range, range * 2);
-  const staffCoffee = coffee.slice(range * 2, range * 3);
+  const [newCoffee, popularCoffee, staffCoffee] = splitCoffee(coffee);
 
   return (
     <Tabs items={[
