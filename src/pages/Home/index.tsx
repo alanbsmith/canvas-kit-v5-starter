@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { useAllCoffee } from '../../providers/AllCoffee';
+import { useFilters } from '../../providers/CoffeeFilters';
 import { Tabs, useTabsModel } from '@workday/canvas-kit-labs-react/tabs';
-import { Button } from '@workday/canvas-kit-react/button';
 import { Flex } from '../../components/common/layout';
 import { Card } from '../../components/Card';
 import { Coffee } from '../../types';
@@ -37,43 +37,41 @@ const CoffeeList: React.FC<CoffeeProps> = ({ coffee }) => {
 
 export const Home: React.FC = () => {
   const { coffee } = useAllCoffee();
-  const [newCoffee, popularCoffee, staffCoffee] = splitCoffee(coffee);
+  const filterModel = useFilters();
+  const filteredCoffee = coffee.filter((c) =>
+    filterModel.state.filters.roastLevel.includes(c.roastLevel)
+  );
+  const [newCoffee, popularCoffee, staffCoffee] = splitCoffee(filteredCoffee);
 
   const model = useTabsModel();
 
   const coffees: Record<string, Coffee[]> = {
-    all: coffee,
+    all: filteredCoffee,
     popular: popularCoffee,
     new: newCoffee,
     alan: staffCoffee,
   };
 
   return (
-    <>
-      <Button onClick={() => model.events.activate({ tab: 'alan' })}>
-        Activate Staff Favorites
-      </Button>
-      {model.state.activeTab}
-      <Tabs model={model}>
-        <Tabs.List>
-          <Tabs.Item name="all" aria-controls="my-panel">
-            All
-          </Tabs.Item>
-          <Tabs.Item name="popular" aria-controls="my-panel">
-            Popular
-          </Tabs.Item>
-          <Tabs.Item name="new" aria-controls="my-panel">
-            New & Interesting
-          </Tabs.Item>
-          <Tabs.Item name="alan" aria-controls="my-panel">
-            Staff Favorites
-          </Tabs.Item>
-        </Tabs.List>
+    <Tabs model={model}>
+      <Tabs.List>
+        <Tabs.Item name="all" aria-controls="my-panel">
+          All
+        </Tabs.Item>
+        <Tabs.Item name="popular" aria-controls="my-panel">
+          Popular
+        </Tabs.Item>
+        <Tabs.Item name="new" aria-controls="my-panel">
+          New & Interesting
+        </Tabs.Item>
+        <Tabs.Item name="alan" aria-controls="my-panel">
+          Staff Favorites
+        </Tabs.Item>
+      </Tabs.List>
 
-        <Tabs.Panel hidden={undefined} id="my-panel">
-          <CoffeeList coffee={coffees[model.state.activeTab] || []} />
-        </Tabs.Panel>
-      </Tabs>
-    </>
+      <Tabs.Panel hidden={undefined} id="my-panel">
+        <CoffeeList coffee={coffees[model.state.activeTab] || []} />
+      </Tabs.Panel>
+    </Tabs>
   );
 };

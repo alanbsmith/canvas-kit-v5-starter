@@ -20,10 +20,9 @@ type StyleProps = BorderProps &
   PositionProps &
   SpaceProps;
 
-export type BoxProps = StyledType &
-  StyleProps & {
-    children?: React.ReactNode;
-  };
+export type BoxProps = StyleProps & {
+  children?: React.ReactNode;
+};
 
 const omittedProps = ['display', 'color'];
 
@@ -31,7 +30,7 @@ const shouldForwardProp = (prop: string) => {
   return isPropValid(prop) && !omittedProps.includes(prop);
 };
 
-const StyledBox = styled('div', { shouldForwardProp })<BoxProps>(
+const StyledBox = styled('div', { shouldForwardProp })<BoxProps & StyledType>(
   {
     boxSizing: 'border-box',
   },
@@ -61,7 +60,7 @@ const StyledBox = styled('div', { shouldForwardProp })<BoxProps>(
  * );
  *
  */
-export const Box = createComponent('div')<BoxProps>({
+export const Box = createComponent('div')({
   displayName: 'Box',
   Component: ({ children, ...elemProps }: BoxProps, ref, Element) => {
     return (

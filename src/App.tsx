@@ -1,13 +1,11 @@
 import * as React from 'react';
 import { CanvasProvider, styled } from '@workday/canvas-kit-react/common';
-import { Global, css } from '@emotion/react';
+import { Global, css } from '@emotion/core';
 import { fontFamily } from '@workday/canvas-kit-react/tokens';
 import { type } from '@workday/canvas-kit-labs-react/tokens';
 import { fonts } from '@workday/canvas-kit-react-fonts';
 
-import { HStack, VStack } from './components/common/layout/Stack';
 import { PageHeader } from './components/PageHeader';
-import { Sidebar } from './components/Sidebar';
 
 // Applies font styles
 const FontContainer = styled('div')(...fonts, {
@@ -37,10 +35,7 @@ export const App: React.FC = (props) => {
         <PageHeader>
           <PageHeader.Heading>Canvas Coffee Roasters</PageHeader.Heading>
         </PageHeader>
-        <HStack spacing={32}>
-          <Sidebar></Sidebar>
-          <VStack spacing={0}>{props.children}</VStack>
-        </HStack>
+        {props.children}
       </FontContainer>
     </CanvasProvider>
   );
