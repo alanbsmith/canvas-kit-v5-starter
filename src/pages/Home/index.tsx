@@ -1,15 +1,15 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { useAllCoffee } from '../../providers/AllCoffee';
-import { Title, Body } from "../../components/common/type";
-import { Flex } from '../../components/common/layout';
+import { useAllCoffee } from "../../providers/AllCoffee";
+import { Heading, Body } from "../../components/common/type";
+import { Flex } from "@workday/canvas-kit-labs-react/layout";
 
 export const Home: React.FC = () => {
   const { coffee } = useAllCoffee();
   return (
-      <Flex flexDirection="column">
-        <Title>Hello, Canvas Kit Workshop!</Title>
-        <Body>Coffee Count: {coffee.length}</Body>
-      </Flex>
+    <Flex flexDirection="column">
+      <Heading>Hello, Canvas Kit Workshop!</Heading>
+      <Body>Coffee Count: {coffee.length}</Body>
+    </Flex>
   );
-}
+};

@@ -2381,38 +2381,52 @@
   resolved "https://registry.yarnpkg.com/@workday/canvas-depth-web/-/canvas-depth-web-0.16.4.tgz#3714a1a955055386a2b70cc05852162b1e056bf2"
   integrity sha512-l4LpCUk2G1FVRfo0Z+MkCWa9bzNIfWdUqGtdXaFSBySYgYvLhG6vNNuTK1VXls8jQdFCUROhKRWcy3Ht1n7NDg==
 
-"@workday/canvas-kit-labs-react@5.0.0-beta.2":
-  version "5.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-labs-react/-/canvas-kit-labs-react-5.0.0-beta.2.tgz#5dee283eafefe02f09b9156a044e1e5499682ee3"
-  integrity sha512-CSi/s+VMX5IUi4wBRv7Zwzef93uav/heheUiN8cOQLFasLNT2s9/mJhFVEkelyt4PyeoJeXDOeN/UgNTCrTDzA==
+"@workday/canvas-kit-labs-react@5.0.2", "@workday/canvas-kit-labs-react@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-labs-react/-/canvas-kit-labs-react-5.0.2.tgz#cdf8197334d3a38f13f7ecda70c3c251b276cae6"
+  integrity sha512-CNQ0EQItVGmsbwdYLmNzKSkjdIPuXsZFVaNQk9u6VG58IjA1wV0rj3IgkGtHZAuShe+3rjVD0KvwfATHKwbdEw==
+  dependencies:
+    "@emotion/core" "^10.0.28"
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@emotion/styled" "^10.0.27"
+    "@types/uuid" "^3.4.4"
+    "@workday/canvas-kit-preview-react" "^5.0.2"
+    "@workday/canvas-kit-react" "^5.0.2"
+    "@workday/canvas-system-icons-web" "1.0.41"
+    chroma-js "^2.1.0"
+    csstype "^2.6.17"
+    lodash.flatten "^4.4.0"
+    uuid "^3.3.3"
+
+"@workday/canvas-kit-popup-stack@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-popup-stack/-/canvas-kit-popup-stack-5.0.2.tgz#4af5f9b7882ef965080f7071149d3ce18d7e2c46"
+  integrity sha512-fMY/bfSd4hTX0okqyGlG4t9kOgZKJtU8YsIaD+J5capBBvMe9OOFY0Q9TEmd9Cdiore2LBxEofqOwotj4+YClw==
+
+"@workday/canvas-kit-preview-react@5.0.2", "@workday/canvas-kit-preview-react@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-preview-react/-/canvas-kit-preview-react-5.0.2.tgz#f1d983a8be07f63472d94d36f86e9bf6282f9465"
+  integrity sha512-nE3ZTXHhWjfemEZ1nun2H3z1c9RQ78JaSg6VhkvXz5u9FUfsC/32atfs757bW3kHFAlQlDshm3hjbTA36vDY6Q==
   dependencies:
     "@emotion/core" "^10.0.28"
     "@emotion/styled" "^10.0.27"
     "@types/uuid" "^3.4.4"
-    "@workday/canvas-colors-web" "^2.0.0"
-    "@workday/canvas-kit-react" "^5.0.0-beta.2"
+    "@workday/canvas-kit-react" "^5.0.2"
     "@workday/canvas-system-icons-web" "1.0.41"
     "@workday/design-assets-types" "^0.2.4"
-    chroma-js "^2.1.0"
-    lodash.flatten "^4.4.0"
     uuid "^3.3.3"
 
-"@workday/canvas-kit-popup-stack@^5.0.0-beta.2", "@workday/canvas-kit-popup-stack@^5.0.0-beta.2-next.2+3b3e8db7":
-  version "5.0.0-beta.2-next.2"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-popup-stack/-/canvas-kit-popup-stack-5.0.0-beta.2-next.2.tgz#c12d9d65470d202dc175e09f23471b38e51e1eb1"
-  integrity sha512-DdeqQi/Hpmzhp41yF3jpzZqFpbvekaKzTjRwJ2RaNXZXbt+iToIfCCHd6XryJbbiwxdc13XjBUDA7bN2rX80rA==
-
-"@workday/canvas-kit-react-fonts@^4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react-fonts/-/canvas-kit-react-fonts-4.6.0.tgz#1919c776427e81eef0e54c55ddfc93d8af0f4162"
-  integrity sha512-GPp+KJ07XhJTpeizWK8zrf4F2ooE1PY6YYucKb/GhM0FI0nekYrrWIXxV6YQQFqlOOmd//3DRe8mPcD01ervqg==
+"@workday/canvas-kit-react-fonts@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react-fonts/-/canvas-kit-react-fonts-5.0.2.tgz#eeada15d2e4d8acfaf2371f7789e6c8951c06066"
+  integrity sha512-0MpdBSgdx9+bIUGLQOLhIngumDzx9M+TAR0NvfrUxYt3cAes+CHNbmUVBVah6+hZexFncaN3s8vwA6UAj8ZHiQ==
   dependencies:
     "@emotion/core" "^10.0.28"
 
-"@workday/canvas-kit-react@5.0.0-beta.2":
-  version "5.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.0-beta.2.tgz#bf023cb2f6f32a71090d72dc4a28320488d00f73"
-  integrity sha512-wzj6dEKz80b4GRW0FJ3l4Ccf/3gHnZ6ldGOqF1t/Jkc9TIK57vunBtzD5qmeyRittTDTdNc74g+7CvJGLl6r3w==
+"@workday/canvas-kit-react@5.0.2", "@workday/canvas-kit-react@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.2.tgz#649684e9abaeec23342549783335016797da3c47"
+  integrity sha512-7iXiua8U4iKd8EvvqamZfbrqPHMInzbNhogfkCkfIL0I0MMLcucehMYoekzvex4Q4CZlPpaicaCL6Ftj5BkmmA==
   dependencies:
     "@emotion/core" "^10.0.28"
     "@emotion/is-prop-valid" "^0.8.2"
@@ -2420,31 +2434,9 @@
     "@popperjs/core" "^2.5.4"
     "@workday/canvas-colors-web" "^2.0.0"
     "@workday/canvas-depth-web" "^0.16.4"
-    "@workday/canvas-kit-popup-stack" "^5.0.0-beta.2"
-    "@workday/canvas-system-icons-web" "1.0.41"
-    "@workday/design-assets-types" "^0.2.4"
-    chroma-js "^2.1.0"
-    element-closest "^3.0.2"
-    emotion-theming "^10.0.10"
-    focus-trap-js "1.1.0"
-    lodash "^4.17.14"
-    polished "^2.3.0"
-    react-innertext "^1.1.5"
-    rtl-css-js "^1.13.1"
-    uuid "^3.3.3"
-
-"@workday/canvas-kit-react@^5.0.0-beta.2":
-  version "5.0.0-beta.2-next.2"
-  resolved "https://registry.yarnpkg.com/@workday/canvas-kit-react/-/canvas-kit-react-5.0.0-beta.2-next.2.tgz#e96ccb876a5c8bb1413909e08c5d008e2b103aa3"
-  integrity sha512-o+gg0uJDGu8LsIuaihlgdgVchhrRGr53pW88CJ0UfGoAD9IvN6T2lKoV0EyooqBtDyCZkDkIpTIGCZIIvlNvlQ==
-  dependencies:
-    "@emotion/core" "^10.0.28"
-    "@emotion/is-prop-valid" "^0.8.2"
-    "@emotion/styled" "^10.0.27"
-    "@popperjs/core" "^2.5.4"
-    "@workday/canvas-colors-web" "^2.0.0"
-    "@workday/canvas-depth-web" "^0.16.4"
-    "@workday/canvas-kit-popup-stack" "^5.0.0-beta.2-next.2+3b3e8db7"
+    "@workday/canvas-kit-labs-react" "^5.0.2"
+    "@workday/canvas-kit-popup-stack" "^5.0.2"
+    "@workday/canvas-kit-preview-react" "^5.0.2"
     "@workday/canvas-system-icons-web" "1.0.41"
     "@workday/design-assets-types" "^0.2.4"
     chroma-js "^2.1.0"
@@ -2461,6 +2453,13 @@
   version "1.0.41"
   resolved "https://registry.yarnpkg.com/@workday/canvas-system-icons-web/-/canvas-system-icons-web-1.0.41.tgz#ad764e1ba24e5d932270617c1515de6386386a92"
   integrity sha512-XRvESwir+jHCbuJrCO1Sflws2bMggy1vFDBnDBX4N4l7ykmDsFSLMtj8iiPovEErSpIlHxxpMIZiTt+W+/9lWQ==
+  dependencies:
+    "@workday/design-assets-types" "0.2.8"
+
+"@workday/canvas-system-icons-web@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@workday/canvas-system-icons-web/-/canvas-system-icons-web-2.0.2.tgz#70e17ee737a3d430b1d2b3f59c524d664c2b4258"
+  integrity sha512-gZk/7O9klo/xIYWNzbXgemHlfK2B9IN6oaX+SXZxsmkXECPNgXJE07xK+DyEbu9maVuryZxOUgxQiIsSGdTFlw==
   dependencies:
     "@workday/design-assets-types" "0.2.8"
 
@@ -4217,6 +4216,11 @@ csstype@^2.5.7:
   version "2.6.16"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.16.tgz#544d69f547013b85a40d15bff75db38f34fe9c39"
   integrity sha512-61FBWoDHp/gRtsoDkq/B1nWrCUG/ok1E3tUrcNbZjsE9Cxd9yzUirjS3+nAATB8U4cTtaQmAHbNndoFz5L6C9Q==
+
+csstype@^2.6.17:
+  version "2.6.17"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.17.tgz#4cf30eb87e1d1a005d8b6510f95292413f6a1c0e"
+  integrity sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==
 
 csstype@^3.0.2:
   version "3.0.7"
@@ -11177,10 +11181,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
-  integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
+typescript@3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
