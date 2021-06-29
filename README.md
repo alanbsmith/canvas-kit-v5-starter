@@ -7,7 +7,11 @@ _a starter repo for the V5 Canvas Kit Workshop_
 - [Canvas Kit V5 Workshop Starter](#canvas-kit-v5-workshop-starter)
   - [Table of Contents](#table-of-contents)
   - [Up & Running](#up--running)
-  - [Session 1 Resources](#session-1-resources)
+  - [Resources](#resources)
+    - [Templates](#templates)
+    - [Figma Specs](#figma-specs)
+    - [Docs](#docs)
+    - [Walkthrough Guide](#walkthrough-guide)
 
 ## Up & Running
 
@@ -25,13 +29,27 @@ yarn start
 
 And visit `http://localhost:3000/`
 
-## Session 1 Resources
+## Resources
 
-- [Workday Design](https://design.workday.com/tokens/basic/)
-- [Session 1 Start Branch](https://github.com/alanbsmith/canvas-kit-v5-starter/tree/session-1-start)
-  - `git checkout session-1-start`
-- [Figma Specs](https://www.figma.com/file/SNDE0b4SBlKz2NXOuizsaz/Canvas-Kit-Workshop-Spec?node-id=42%3A0)
-  - _Requires login. Workday folks only_
-- [Session 1 Walkthrough](https://gist.github.com/alanbsmith/bfb7ec325d02a97c38d0be81b473c71b)
-- [Session 1 Finish Branch](https://github.com/alanbsmith/canvas-kit-v5-starter/tree/session-1-finish)
-  - `git checkout session-1-finish`
+### Templates
+
+- [Session Start Sandbox](https://codesandbox.io/s/canvas-kit-v5-workshop-session-1-start-5po3p)
+- [Session Finish Sandbox](https://codesandbox.io/s/canvas-kit-v5-workshop-session-1-finish-et5rd)
+
+### Figma Specs
+
+- [Complete UI](https://www.figma.com/file/SNDE0b4SBlKz2NXOuizsaz/Canvas-Kit-Workshop-Spec?node-id=42%3A0)
+- [Page Layout](https://www.figma.com/file/SNDE0b4SBlKz2NXOuizsaz/Canvas-Kit-Workshop-Spec?node-id=135%3A556)
+- [Card Layout](https://www.figma.com/file/SNDE0b4SBlKz2NXOuizsaz/Canvas-Kit-Workshop-Spec?node-id=98%3A4467)
+
+### Docs
+
+- [Type token docs](https://github.com/Workday/canvas-kit/tree/master/modules/react/tokens#type)
+- [Box docs](https://workday.github.io/canvas-kit/?path=/docs/labs-common-box--as#box)
+- [Flex docs](https://workday.github.io/canvas-kit/?path=/docs/labs-layout-flex--usage#flex)
+- [Stack docs](https://workday.github.io/canvas-kit/?path=/docs/labs-layout-stack--basic-stack#stack-hstack-and-vstack)
+- [Canvas Kit docs](https://workday.github.io/canvas-kit/)
+
+### Walkthrough Guide
+
+- [Step-by-step guide](https://gist.github.com/alanbsmith/c960da5c23127d74929e00ca9c67fbc9)
