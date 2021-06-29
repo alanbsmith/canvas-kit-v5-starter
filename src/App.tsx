@@ -5,6 +5,10 @@ import { type } from "@workday/canvas-kit-react/tokens";
 
 import { fonts } from "@workday/canvas-kit-react-fonts";
 
+import { Flex } from "@workday/canvas-kit-labs-react/layout";
+import { PageHeader } from "./components/PageHeader";
+import { Sidebar } from "./components/Sidebar";
+
 // Applies font styles
 const FontContainer = styled("div")(...fonts, {
   ...type.levels.body.small,
@@ -29,7 +33,13 @@ export const App: React.FC = (props) => {
     <CanvasProvider>
       <FontContainer>
         <Global styles={css(globalStyles)} />
-        {props.children}
+        <PageHeader>
+          <PageHeader.Heading>Canvas Coffee Roasters</PageHeader.Heading>
+        </PageHeader>
+        <Flex minHeight="100vh">
+          <Sidebar />
+          {props.children}
+        </Flex>
       </FontContainer>
     </CanvasProvider>
   );
